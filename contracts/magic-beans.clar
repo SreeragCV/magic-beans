@@ -21,3 +21,8 @@
     (ft-transfer? magic-beans amount sender recipient)
   )
 )
+
+(define-read-only (get-balance (who principal))
+  (ft-get-balance magic-beans who)
+)
+;; ST2RC7FMFZWK24RERQ40SD6H2TE6HZ6WT2G4ZE4A3.magic-beans
