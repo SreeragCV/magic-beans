@@ -11,8 +11,15 @@ plan:
         - contract-publish:
             contract-name: magic-beans
             expected-sender: ST2RC7FMFZWK24RERQ40SD6H2TE6HZ6WT2G4ZE4A3
-            cost: 7330
+            cost: 8750
             path: "contracts\\magic-beans.clar"
+            anchor-block-only: true
+            clarity-version: 2
+        - contract-publish:
+            contract-name: beanstalk-exchange
+            expected-sender: ST2RC7FMFZWK24RERQ40SD6H2TE6HZ6WT2G4ZE4A3
+            cost: 41880
+            path: "contracts\\beanstalk-exchange.clar"
             anchor-block-only: true
             clarity-version: 2
       epoch: "2.4"
